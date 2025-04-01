@@ -1,0 +1,133 @@
+@use "../media" as *;
+@use "../mixins" as *;
+
+.categories {
+  margin-bottom: 160px;
+
+  @include tablet {
+    margin-bottom: 100px;
+  }
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+
+  .container {
+    @include mobile {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile {
+      display: contents;
+    }
+  }
+
+  &__title {
+    @include mobile {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__button {
+    @include reset-button;
+
+    display: flex;
+    align-items: center;
+    height: var(--button-height);
+    border-radius: var(--border-radius);
+    background: var(--color-accent-blue);
+    color: var(--color-black);
+    padding-inline: 27px;
+    flex-shrink: 0;
+    font-weight: 600;
+    font-size: 16px;
+
+    @include hover {
+      background: var(--color-black);
+      color: var(--color-white);
+    }
+
+    @include mobile { 
+      order: 1;
+      margin-left: auto;
+    }
+  }
+
+  &__list {
+    margin-top: 130px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 70px 40px;
+    flex-basis: 100%;
+
+    @include tablet {
+      margin-top: 90px;
+      gap: 60px 30px;
+    }
+
+    @include mobile {
+      margin-top: 50px;
+      gap: 50px 20px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__item {
+    --bg: linear-gradient(
+      180deg,
+      rgba(112, 130, 70, 0) 0%,
+      rgba(112, 130, 70, 0.1) 100%
+    );
+
+    flex: 0 0 180px;
+    width: 180px;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    height: 152px;
+    background: var(--bg);
+    border-radius: var(--border-radius-large);
+    padding: 0 15px 40px;
+    align-items: center;
+  }
+
+  &__image {
+    position: relative;
+    height: 100px;
+    translate: 0 -30px;
+    transition: translate 400ms cubic-bezier(0.4, 0, 1, 1);
+
+    @include hover {
+      translate: 0 -50px;
+    }
+
+    img {
+      aspect-ratio: 1;
+    }
+
+    &-photo {
+      position: relative;
+      z-index: 1;
+    }
+
+    &-effect {
+      translate: 20px -80px;
+      opacity: 0.2;
+      filter: blur(20px);
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 18px;
+  }
+}

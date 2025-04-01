@@ -1,0 +1,58 @@
+@use "../media" as *;
+@use "../mixins" as *;
+
+.catalog {
+  margin-bottom: 160px;
+
+  @include tablet {
+    margin-bottom: 100px;
+  }
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+  
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 80px;
+
+    @include tablet {
+      align-items: start;
+      margin-bottom: 60px;
+    }
+
+    @include mobile { 
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    &.center {
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    max-width: 514px;
+
+    @include mobile { 
+      max-width: 650px;
+    }
+  }
+
+  &__description {
+    max-width: 620px;
+
+    @include mobile { 
+      max-width: 550px;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 40px;
+  }
+}

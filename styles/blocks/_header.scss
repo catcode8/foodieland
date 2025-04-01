@@ -1,0 +1,109 @@
+@use "../media" as *;
+@use "../mixins" as *;
+
+.header {
+  position: relative;
+  z-index: 1005;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 60px;
+    height: 110px;
+
+    @include tablet {
+      height: 80px;
+    }
+  }
+
+  &__logo img {
+    height: auto;
+  }
+  &__menu {
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  &__menu-list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 60px;
+
+    @include tablet {
+      column-gap: 30px;
+    }
+  }
+
+  &__menu-link {
+
+    @include hover {
+      text-decoration: underline;
+      text-decoration-color: var(--color-accent-orange);
+      text-decoration-style: dashed;
+    }
+  }
+
+  &__soc1als {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+
+  &__soc1als-link {
+    @include hover {
+      color: var(--color-accent-orange);
+    }
+  }
+
+  &__burger-button {
+    @include reset-button;
+    @include square(44px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: var(--border-radius-medium);
+
+    &::after,
+    &::before {
+      content: '';
+    }
+
+    &::after,
+    &::before,
+    .line {
+      width: 22px;
+      height: 2px;
+      background: currentColor;
+      transition: transform 400ms ease-in-out;
+      transform-origin: 50% 50%;
+    }
+
+    &.open {
+      .line {
+        transform: scaleX(0);
+      }
+
+      &::before {
+        transform: translateY(6px) rotate(45deg);
+      }
+
+      &::after {
+        transform: translateY(-6px) rotate(-45deg);
+      }
+    }
+
+    @include hover {
+      background-color: var(--color-accent-blue);
+
+      
+    }
+  }
+}

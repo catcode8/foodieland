@@ -1,0 +1,23 @@
+@use "../media" as *;
+@use "../mixins" as *;
+
+.button {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--button-height);
+  border-radius: var(--border-radius);
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 18px 36px;
+  gap: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  flex-shrink: 0;
+  transition: background 200ms cubic-bezier(0, 0, 0.2, 1);
+  cursor: pointer;
+
+  @include hover {
+    background: var(--color-accent-orange);
+  }
+}

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Foodieland Home</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="header__inner container">
+          <a href="/index.html" class="header__logo logo">
+            <img
+              class="header__logo-image"
+              src="/image/logo.svg"
+              alt="Foodieland"
+              width="110"
+              height="30"
+              loading="lazy"
+            />
+          </a>
+          <nav class="header__menu hidden-mobile">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="/index.html" class="header__menu-link">Home</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__menu-link">Recipes</a>
+              </li>
+              <li class="header__item">
+                <a href="/blog.html" class="header__menu-link">Blog</a>
+              </li>
+              <li class="header__item">
+                <a href="/contact.html" class="header__menu-link">Contact</a>
+              </li>
+              <li class="header__item">
+                <a href="/" class="header__menu-link">About us</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__soc1als hidden-mobile">
+            <li class="header__soc1als-item">
+              <a href="#" class="header__soc1als-link" target="_blank">
+                <svg
+                  width="10"
+                  height="20"
+                  viewBox="0 0 10 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.11163 3.29509H9.92331V0.139742C9.61075 0.0967442 8.53581 0 7.28393 0C4.67183 0 2.88248 1.643 2.88248 4.66274V7.44186H0V10.9693H2.88248V19.845H6.41654V10.9701H9.18243L9.6215 7.44269H6.41571V5.01251C6.41654 3.99297 6.69106 3.29509 8.11163 3.29509Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="header__soc1als-item">
+              <a href="#" class="header__soc1als-link" target="_blank">
+                <svg
+                  width="23"
+                  height="18"
+                  viewBox="0 0 23 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.9617 2.11613C22.1435 2.475 21.2718 2.71288 20.3629 2.82838C21.2979 2.27013 22.0115 1.39287 22.347 0.3355C21.4753 0.85525 20.5128 1.22238 19.487 1.42725C18.6593 0.545875 17.4795 0 16.1925 0C13.6955 0 11.6853 2.02675 11.6853 4.51137C11.6853 4.86888 11.7155 5.21263 11.7898 5.53988C8.04017 5.357 4.72229 3.55988 2.49342 0.82225C2.10429 1.49738 1.87604 2.27012 1.87604 3.102C1.87604 4.664 2.68042 6.04862 3.87942 6.85025C3.15479 6.8365 2.44392 6.62613 1.84167 6.29475C1.84167 6.3085 1.84167 6.32638 1.84167 6.34425C1.84167 8.536 3.40505 10.3565 5.45517 10.7759C5.08805 10.8763 4.68792 10.9244 4.27267 10.9244C3.98392 10.9244 3.69242 10.9079 3.41879 10.8474C4.00317 12.6335 5.66142 13.9466 7.63317 13.9893C6.09867 15.1896 4.1503 15.9129 2.04104 15.9129C1.67117 15.9129 1.31642 15.8964 0.96167 15.851C2.95954 17.1394 5.3273 17.875 7.88067 17.875C16.1802 17.875 20.7177 11 20.7177 5.04075C20.7177 4.84137 20.7108 4.64887 20.7012 4.45775C21.5963 3.8225 22.3484 3.02913 22.9617 2.11613Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="header__soc1als-item">
+              <a href="#" class="header__soc1als-link" target="_blank">
+                <svg
+                  width="23"
+                  height="22"
+                  viewBox="0 0 23 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.83667 0H16.0867C19.883 0 22.9617 3.07862 22.9617 6.875V15.125C22.9617 18.9214 19.883 22 16.0867 22H7.83667C4.04029 22 0.96167 18.9214 0.96167 15.125V6.875C0.96167 3.07862 4.04029 0 7.83667 0ZM16.0867 19.9375C18.7404 19.9375 20.8992 17.7787 20.8992 15.125V6.875C20.8992 4.22125 18.7404 2.0625 16.0867 2.0625H7.83667C5.18292 2.0625 3.02417 4.22125 3.02417 6.875V15.125C3.02417 17.7787 5.18292 19.9375 7.83667 19.9375H16.0867Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.46167 11C6.46167 7.96263 8.92429 5.5 11.9617 5.5C14.999 5.5 17.4617 7.96263 17.4617 11C17.4617 14.0374 14.999 16.5 11.9617 16.5C8.92429 16.5 6.46167 14.0374 6.46167 11ZM8.52417 11C8.52417 12.8948 10.0669 14.4375 11.9617 14.4375C13.8564 14.4375 15.3992 12.8948 15.3992 11C15.3992 9.10388 13.8564 7.5625 11.9617 7.5625C10.0669 7.5625 8.52417 9.10388 8.52417 11Z"
+                    fill="currentColor"
+                  />
+                  <circle
+                    cx="17.8742"
+                    cy="5.08761"
+                    r="0.732875"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <button
+            class="header__burger-button visible-mobile"
+            type="button"
+            onclick="this.classList.toggle('open'); document.body.querySelector('#mobileOverlay').classList.toggle('open')"
+          >
+            <span class="line"></span>
+            <span class="visually-hidden">Open navigation menu</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="container">
+          <div class="search">
+            <h1 class="h1 search__title">Blog & Article</h1>
+            <p class="search__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore
+            </p>
+            <form>
+              <div class="search__field field">
+                <label class="field__label visually-hidden"
+                  >Search article, news or recipe</label
+                >
+                <input
+                  class="field__input"
+                  placeholder="Search article, news or recipe..."
+                  type="text"
+                  required
+                />
+                <button
+                  class="button field__button search__button"
+                  type="button"
+                >
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section class="container columns blog">
+          <div class="left-column">
+            <article class="blog-post">
+              <a href="/blog-post.html" target="_blank" class="blog-post__image">
+                <img
+                  src="/image/blog-post/1.jpg"
+                  alt=""
+                  width="290"
+                  height="200"
+                  loading="lazy"
+                />
+              </a>
+              <div class="blog-post__body">
+                <h6 class="blog-post__title h3">
+                  <a href="/blog-post.html" target="_blank">Crochet Projects for Noodle Lovers</a>
+                </h6>
+                <p class="blog-post__description">
+                  Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqut
+                  enim
+                </p>
+                <div class="blog-post__meta">
+                  <div class="blog-post__author blog-post__meta-info">
+                    <img
+                      src="/image/blog-post/photo-1.png"
+                      alt=""
+                      class="blog-post__person-image"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                    />
+                    <span>Wade Warren</span>
+                  </div>
+                  <div class="blog-post__time blog-post__meta-info">
+                    12 November 2021
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="blog-post">
+              <a href="/blog-post.html" target="_blank" class="blog-post__image">
+                <img
+                  src="/image/blog-post/2.jpg"
+                  alt=""
+                  width="290"
+                  height="200"
+                  loading="lazy"
+                />
+              </a>
+              <div class="blog-post__body">
+                <h6 class="blog-post__title h3">
+                  <a href="/blog-post.html" target="_blank">10 Vegetarian Recipes To Eat This Month</a>
+                </h6>
+                <p class="blog-post__description">
+                  Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqut
+                  enim
+                </p>
+                <div class="blog-post__meta">
+                  <div class="blog-post__author blog-post__meta-info">
+                    <img
+                      src="/image/blog-post/photo-2.png"
+                      alt=""
+                      class="blog-post__person-image"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                    />
+                    <span>Robert Fox</span>
+                  </div>
+                  <div class="blog-post__time blog-post__meta-info">
+                    12 November 2021
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="blog-post">
+              <a href="/blog-post.html" target="_blank" class="blog-post__image">
+                <img
+                  src="/image/blog-post/3.jpg"
+                  alt=""
+                  width="290"
+                  height="200"
+                  loading="lazy"
+                />
+              </a>
+              <div class="blog-post__body">
+                <h6 class="blog-post__title h3">
+                  <a href="/blog-post.html" target="_blank">Full Guide to Becoming a Professional Chef</a>
+                </h6>
+                <p class="blog-post__description">
+                  Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqut
+                  enim
+                </p>
+                <div class="blog-post__meta">
+                  <div class="blog-post__author blog-post__meta-info">
+                    <img
+                      src="/image/blog-post/photo-3.png"
+                      alt=""
+                      class="blog-post__person-image"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                    />
+                    <span>Wade Warren</span>
+                  </div>
+                  <div class="blog-post__time blog-post__meta-info">
+                    12 November 2021
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="blog-post">
+              <a href="/blog-post.html" target="_blank" class="blog-post__image">
+                <img
+                  src="/image/blog-post/4.jpg"
+                  alt=""
+                  width="290"
+                  height="200"
+                  loading="lazy"
+                />
+              </a>
+              <div class="blog-post__body">
+                <h6 class="blog-post__title h3">
+                  <a href="/blog-post.html" target="_blank">Simple & Delicious Vegetarian Lasagna</a>
+                </h6>
+                <p class="blog-post__description">
+                  Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqut
+                  enim
+                </p>
+                <div class="blog-post__meta">
+                  <div class="blog-post__author blog-post__meta-info">
+                    <img
+                      src="/image/blog-post/photo-4.png"
+                      alt=""
+                      class="blog-post__person-image"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                    />
+                    <span>Leslie Alexander</span>
+                  </div>
+                  <div class="blog-post__time blog-post__meta-info">
+                    12 November 2021
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="blog-post">
+              <a href="/blog-post.html" target="_blank" class="blog-post__image">
+                <img
+                  src="/image/blog-post/5.jpg"
+                  alt=""
+                  width="290"
+                  height="200"
+                  loading="lazy"
+                />
+              </a>
+              <div class="blog-post__body">
+                <h6 class="blog-post__title h3">
+                  <a href="/blog-post.html" target="_blank">Plantain and Pinto Stew with Aji Verde</a>
+                </h6>
+                <p class="blog-post__description">
+                  Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqut
+                  enim
+                </p>
+                <div class="blog-post__meta">
+                  <div class="blog-post__author blog-post__meta-info">
+                    <img
+                      src="/image/blog-post/photo-5.png"
+                      alt=""
+                      class="blog-post__person-image"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                    />
+                    <span>Courtney Henry</span>
+                  </div>
+                  <div class="blog-post__time blog-post__meta-info">
+                    12 November 2021
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="blog-post">
+              <a href="/blog-post.html" target="_blank" class="blog-post__image">
+                <img
+                  src="/image/blog-post/6.jpg"
+                  alt=""
+                  width="290"
+                  height="200"
+                  loading="lazy"
+                />
+              </a>
+              <div class="blog-post__body">
+                <h6 class="blog-post__title h3">
+                  <a href="/blog-post.html" target="_blank">We’re Hiring a Communications Assistant!</a>
+                </h6>
+                <p class="blog-post__description">
+                  Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqut
+                  enim
+                </p>
+                <div class="blog-post__meta">
+                  <div class="blog-post__author blog-post__meta-info">
+                    <img
+                      src="/image/blog-post/photo-6.png"
+                      alt=""
+                      class="blog-post__person-image"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                    />
+                    <span>Albert Flores</span>
+                  </div>
+                  <div class="blog-post__time blog-post__meta-info">
+                    12 November 2021
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="right-column">
+            <div class="other-recipe">
+              <h3 class="h4 other-recipe__title">Other Recipe</h3>
+              <div class="other-recipe__list">
+                <div class="other-recipe__item">
+                  <a class="other-recipe__link" href="/recipe.html" target="_blank">
+                    <img
+                      src="/image/other-recipe/1.jpg"
+                      alt=""
+                      width="180"
+                      height="120"
+                      loading="lazy"
+                  /></a>
+                  <div class="other-recipe__body">
+                    <a href="/recipe.html" target="_blank">
+                      <span class="other-recipe__body--title">
+                        Chicken Meatball with Creamy Chees...
+                      </span></a
+                    >
+                    <div class="other-recipe__body--description">
+                      By Andreas Paula
+                    </div>
+                  </div>
+                </div>
+                <div class="other-recipe__item">
+                  <a class="other-recipe__link" href="/recipe.html" target="_blank">
+                    <img
+                      src="/image/other-recipe/2.jpg"
+                      alt=""
+                      width="180"
+                      height="120"
+                      loading="lazy"
+                  /></a>
+                  <div class="other-recipe__body">
+                    <a href="/recipe.html" target="_blank">
+                      <span class="other-recipe__body--title">
+                        The Creamiest Creamy Chicken an...
+                      </span></a
+                    >
+                    <p class="other-recipe__body--description">
+                      By Andreas Paula
+                    </p>
+                  </div>
+                </div>
+                <div class="other-recipe__item">
+                  <a class="other-recipe__link" href="/recipe.html" target="_blank">
+                    <img
+                      src="/image/other-recipe/3.jpg"
+                      alt=""
+                      width="180"
+                      height="120"
+                      loading="lazy"
+                  /></a>
+                  <div class="other-recipe__body">
+                    <a href="/recipe.html" target="_blank">
+                      <span class="other-recipe__body--title">
+                        The Best Easy One Pot Chicken and Rice
+                      </span></a
+                    >
+                    <p class="other-recipe__body--description">
+                      By Andreas Paula
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-card__ad right-column__ad">
+              <h3 class="recipe-card__ad-title">
+                Don’t forget to eat <br />healthy food
+              </h3>
+              <img
+                src="/image/recipe-card/1-promo.png"
+                alt=""
+                class="recipe-card__ad-image"
+                width="354"
+                height="336"
+                loading="lazy"
+              />
+              <div class="recipe-card__ad-site">www.foodieland.com</div>
+              <a href="/index.html" target="_blank"></a>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <button class="pagination__button is-current" type="button">
+                  <span>1</span>
+                  <span class="visually-hidden">First slide</span>
+                </button>
+              </li>
+              <li>
+                <button class="pagination__button" type="button">
+                  <span>2</span>
+                  <span class="visually-hidden">Second slide</span>
+                </button>
+              </li>
+              <li>
+                <button class="pagination__button" type="button">
+                  <span>3</span>
+                  <span class="visually-hidden">Third slide</span>
+                </button>
+              </li>
+              <li>
+                <button class="pagination__button" type="button">
+                  <span>4</span>
+                  <span class="visually-hidden">Fouth slide</span>
+                </button>
+              </li>
+              <li>
+                <button class="pagination__button" type="button">
+                  <span>5</span>
+                  <span class="visually-hidden">Fifth slide</span>
+                </button>
+              </li>
+              <li>
+                <button class="pagination__button" type="button">
+                  <span>...</span>
+                  <span class="visually-hidden">More slides</span>
+                </button>
+              </li>
+              <li>
+                <button class="pagination__button" type="button">
+                  <svg
+                    width="5"
+                    height="14"
+                    viewBox="0 0 5 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 1V1C4.31371 4.31371 4.31371 9.68629 1 13V13"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="visually-hidden">Second slide</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="contact-us container">
+          <div class="contact-us__container">
+            <header class="contact-us__header">
+              <h2 class="h2 contact-us__title">Deliciousness to your inbox</h2>
+              <div class="contact-us__description">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqut
+                  enim ad minim
+                </p>
+              </div>
+            </header>
+            <form action="contact-us__form">
+              <div class="contact-us__field field">
+                <label class="field__label visually-hidden email">Email</label>
+                <input
+                  class="field__input"
+                  id="email"
+                  name="email"
+                  placeholder="Your email address..."
+                  type="email"
+                  required
+                />
+                <button class="button field__button" type="submit">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer container">
+        <div class="footer__inner">
+          <div class="footer__logo">
+            <a href="/index.html" class="logo">
+              <img
+                src="/image/logo.svg"
+                alt=""
+                class=""
+                width="110"
+                height="30"
+              />
+            </a>
+            <div class="footer__description">
+              <p>Lorem ipsum dolor sit amet, consectetuipisicing elit</p>
+            </div>
+          </div>
+          <nav class="footer__menu">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Recipes</a>
+              </li>
+              <li class="footer__item">
+                <a href="/blog.html" class="footer__link">Blog</a>
+              </li>
+              <li class="footer__item">
+                <a href="/contact.html" class="footer__link">Contact</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">About us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__extra">
+          <p class="footer__copyright">
+            ©&nbsp;<time datetime="2020">2020</time>&nbsp;Flowbase. Powered
+            by&nbsp;<a href="#">Webflow</a>
+          </p>
+          <span class="footer__soc1als">
+            <ul class="footer__soc1als-list">
+              <li class="footer__soc1als-item">
+                <a class="footer__soc1als-link" href="#">
+                  <span class="visually-hidden">Facebook</span>
+                  <svg
+                    width="10"
+                    height="20"
+                    viewBox="0 0 10 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.11163 3.29509H9.92331V0.139742C9.61075 0.0967442 8.53581 0 7.28393 0C4.67183 0 2.88248 1.643 2.88248 4.66274V7.44186H0V10.9693H2.88248V19.845H6.41654V10.9701H9.18243L9.6215 7.44269H6.41571V5.01251C6.41654 3.99297 6.69106 3.29509 8.11163 3.29509Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__soc1als-item">
+                <a class="footer__soc1als-link" href="#">
+                  <span class="visually-hidden">Twitter</span>
+                  <svg
+                    width="23"
+                    height="18"
+                    viewBox="0 0 23 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.9617 2.11613C22.1435 2.475 21.2718 2.71288 20.3629 2.82838C21.2979 2.27013 22.0115 1.39287 22.347 0.3355C21.4753 0.85525 20.5128 1.22238 19.487 1.42725C18.6593 0.545875 17.4795 0 16.1925 0C13.6955 0 11.6853 2.02675 11.6853 4.51137C11.6853 4.86888 11.7155 5.21263 11.7898 5.53988C8.04017 5.357 4.72229 3.55988 2.49342 0.82225C2.10429 1.49738 1.87604 2.27012 1.87604 3.102C1.87604 4.664 2.68042 6.04862 3.87942 6.85025C3.15479 6.8365 2.44392 6.62613 1.84167 6.29475C1.84167 6.3085 1.84167 6.32638 1.84167 6.34425C1.84167 8.536 3.40505 10.3565 5.45517 10.7759C5.08805 10.8763 4.68792 10.9244 4.27267 10.9244C3.98392 10.9244 3.69242 10.9079 3.41879 10.8474C4.00317 12.6335 5.66142 13.9466 7.63317 13.9893C6.09867 15.1896 4.1503 15.9129 2.04104 15.9129C1.67117 15.9129 1.31642 15.8964 0.96167 15.851C2.95954 17.1394 5.3273 17.875 7.88067 17.875C16.1802 17.875 20.7177 11 20.7177 5.04075C20.7177 4.84137 20.7108 4.64887 20.7012 4.45775C21.5963 3.8225 22.3484 3.02913 22.9617 2.11613Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__soc1als-item">
+                <a class="footer__soc1als-link" href="#">
+                  <span class="visually-hidden">Instagram</span>
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 23 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.83667 0H16.0867C19.883 0 22.9617 3.07862 22.9617 6.875V15.125C22.9617 18.9214 19.883 22 16.0867 22H7.83667C4.04029 22 0.96167 18.9214 0.96167 15.125V6.875C0.96167 3.07862 4.04029 0 7.83667 0ZM16.0867 19.9375C18.7404 19.9375 20.8992 17.7787 20.8992 15.125V6.875C20.8992 4.22125 18.7404 2.0625 16.0867 2.0625H7.83667C5.18292 2.0625 3.02417 4.22125 3.02417 6.875V15.125C3.02417 17.7787 5.18292 19.9375 7.83667 19.9375H16.0867Z"
+                      fill="black"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.46167 11C6.46167 7.96263 8.92429 5.5 11.9617 5.5C14.999 5.5 17.4617 7.96263 17.4617 11C17.4617 14.0374 14.999 16.5 11.9617 16.5C8.92429 16.5 6.46167 14.0374 6.46167 11ZM8.52417 11C8.52417 12.8948 10.0669 14.4375 11.9617 14.4375C13.8564 14.4375 15.3992 12.8948 15.3992 11C15.3992 9.10388 13.8564 7.5625 11.9617 7.5625C10.0669 7.5625 8.52417 9.10388 8.52417 11Z"
+                      fill="black"
+                    />
+                    <circle
+                      cx="17.8742"
+                      cy="5.08761"
+                      r="0.732875"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </span>
+        </div>
+      </footer>
+
+      <div class="mobile-overlay visible-mobile" id="mobileOverlay">
+        <ul class="mobile-overlay__list">
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">Home</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">Recipes</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">Blog</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">Contact</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">About us</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-overlay__soc1als">
+          <li class="mobile-overlay_soc1als-item">
+            <a href="/" class="mobile-overlay__soc1als-link" target="_blank">
+              <svg
+                width="10"
+                height="20"
+                viewBox="0 0 10 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.11163 3.29509H9.92331V0.139742C9.61075 0.0967442 8.53581 0 7.28393 0C4.67183 0 2.88248 1.643 2.88248 4.66274V7.44186H0V10.9693H2.88248V19.845H6.41654V10.9701H9.18243L9.6215 7.44269H6.41571V5.01251C6.41654 3.99297 6.69106 3.29509 8.11163 3.29509Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-overlay__soc1als-item">
+            <a href="/" class="mobile-overlay__soc1als-link" target="_blank">
+              <svg
+                width="23"
+                height="18"
+                viewBox="0 0 23 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.9617 2.11613C22.1435 2.475 21.2718 2.71288 20.3629 2.82838C21.2979 2.27013 22.0115 1.39287 22.347 0.3355C21.4753 0.85525 20.5128 1.22238 19.487 1.42725C18.6593 0.545875 17.4795 0 16.1925 0C13.6955 0 11.6853 2.02675 11.6853 4.51137C11.6853 4.86888 11.7155 5.21263 11.7898 5.53988C8.04017 5.357 4.72229 3.55988 2.49342 0.82225C2.10429 1.49738 1.87604 2.27012 1.87604 3.102C1.87604 4.664 2.68042 6.04862 3.87942 6.85025C3.15479 6.8365 2.44392 6.62613 1.84167 6.29475C1.84167 6.3085 1.84167 6.32638 1.84167 6.34425C1.84167 8.536 3.40505 10.3565 5.45517 10.7759C5.08805 10.8763 4.68792 10.9244 4.27267 10.9244C3.98392 10.9244 3.69242 10.9079 3.41879 10.8474C4.00317 12.6335 5.66142 13.9466 7.63317 13.9893C6.09867 15.1896 4.1503 15.9129 2.04104 15.9129C1.67117 15.9129 1.31642 15.8964 0.96167 15.851C2.95954 17.1394 5.3273 17.875 7.88067 17.875C16.1802 17.875 20.7177 11 20.7177 5.04075C20.7177 4.84137 20.7108 4.64887 20.7012 4.45775C21.5963 3.8225 22.3484 3.02913 22.9617 2.11613Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-overlay__soc1als-item">
+            <a href="/" class="mobile-overlay__soc1als-link" target="_blank">
+              <svg
+                width="23"
+                height="22"
+                viewBox="0 0 23 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.83667 0H16.0867C19.883 0 22.9617 3.07862 22.9617 6.875V15.125C22.9617 18.9214 19.883 22 16.0867 22H7.83667C4.04029 22 0.96167 18.9214 0.96167 15.125V6.875C0.96167 3.07862 4.04029 0 7.83667 0ZM16.0867 19.9375C18.7404 19.9375 20.8992 17.7787 20.8992 15.125V6.875C20.8992 4.22125 18.7404 2.0625 16.0867 2.0625H7.83667C5.18292 2.0625 3.02417 4.22125 3.02417 6.875V15.125C3.02417 17.7787 5.18292 19.9375 7.83667 19.9375H16.0867Z"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.46167 11C6.46167 7.96263 8.92429 5.5 11.9617 5.5C14.999 5.5 17.4617 7.96263 17.4617 11C17.4617 14.0374 14.999 16.5 11.9617 16.5C8.92429 16.5 6.46167 14.0374 6.46167 11ZM8.52417 11C8.52417 12.8948 10.0669 14.4375 11.9617 14.4375C13.8564 14.4375 15.3992 12.8948 15.3992 11C15.3992 9.10388 13.8564 7.5625 11.9617 7.5625C10.0669 7.5625 8.52417 9.10388 8.52417 11Z"
+                  fill="currentColor"
+                />
+                <circle
+                  cx="17.8742"
+                  cy="5.08761"
+                  r="0.732875"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

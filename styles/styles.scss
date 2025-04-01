@@ -1,0 +1,31 @@
+@use './normalize';
+@use './fonts';
+@use './variables';
+@use './mixins';
+@use './media';
+@use './utils';
+@use './globals';
+
+@use "./blocks/button";
+@use "./blocks/header";
+@use "./blocks/mobile-overlay";
+@use "./blocks/hero";
+@use "./blocks/categories";
+@use "./blocks/recipe-card";
+@use "./blocks/chef";
+@use "./blocks/on-instagram";
+@use "./blocks/catalog-card";
+@use "./blocks/contact-us";
+@use "./blocks/footer";
+
+@use "./blocks/recipe-datails";
+@use "./blocks/columns";
+
+@use "./blocks/search";
+@use "./blocks/blog-post";
+@use "./blocks/pagination";
+
+@use "./blocks/inner";
+@use "./blocks/questions";
+
+@use "./blocks/contact";

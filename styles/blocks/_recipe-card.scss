@@ -1,0 +1,178 @@
+@use "../media" as *;
+@use "../mixins" as *;
+
+.recipe-card {
+  margin-bottom: 160px;
+
+  @include tablet {
+    margin-bottom: 100px;
+  }
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+  
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 95px;
+
+    @include tablet {
+      margin-bottom: 35px;
+    }
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+
+    @include tablet {
+      gap: 30px;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius-large);
+    background: linear-gradient(
+      180deg,
+      rgba(231, 249, 253, 0) 0%,
+      #e7f9fd 100%
+    );
+    padding: 16px 16px 32px;
+    gap: 24px;
+  }
+
+  &__image {
+    position: relative;
+
+    img {
+      border-radius: var(--border-radius-medium);
+      aspect-ratio: 368/250;
+      width: 100%;
+    }
+  }
+
+  &__heart {
+    @include square(48px);
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    color: #dbe2e5;
+    cursor: pointer;
+    transition: color 400ms cubic-bezier(0.4, 0, 1, 1);
+
+    @include hover {
+      color: #ff6363;
+    }
+
+    &.is-active {
+      color: #ff6363;
+    }
+  }
+
+  &__title-card {
+    flex-grow: 1;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+  }
+
+  &__button-component {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+    width: 107px;
+  }
+
+  &__ad {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #357355 0%, #1d483b 100%);
+    padding: 40px 23px 0px;
+    overflow: hidden;
+
+    z-index: 1;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 110%;
+      height: 110%;
+      background: url("/icons/recipe-card/star.svg") center/contain no-repeat;
+      top: -5%;
+      left: -5%;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    &-title {
+      font-family: "lobster";
+      font-weight: 400;
+      line-height: 1.25;
+      font-size: 24px;
+      text-align: center;
+      color: var(--color-white);
+    }
+
+
+
+    &-site {
+      position: absolute;
+      color: var(--color-white);
+      opacity: .6;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      bottom: 32px;
+    }
+
+    a {
+      @include fill;
+    }
+  }
+
+  &__item.alt {
+    padding: 0;
+    background: none;
+    gap: 0;
+
+    .recipe-card__image img {
+      aspect-ratio: 290/200;
+    }
+
+    .recipe-card__title-card {
+      font-size: 18px;
+      line-height: 1.4;
+      margin: 14px 0 24px;
+    }
+  }
+}

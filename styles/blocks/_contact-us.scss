@@ -1,0 +1,86 @@
+@use "../media" as *;
+@use "../mixins" as *;
+
+.contact-us {
+  margin-bottom: 160px;
+
+  @include tablet {
+    margin-bottom: 100px;
+  }
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+  
+  &__container {
+    position: relative;
+    padding-block: 80px;
+    padding-inline: 15px;
+    text-align: center;
+    border-radius: 60px;
+    overflow: hidden;
+    background: 
+      url("/image/contact-us/1.png") 0% 100% / 376px no-repeat,
+      url("/image/contact-us/2.png") 100% 100% / 350px no-repeat,
+      var(--color-accent-blue);
+
+    @include tablet {
+      padding-block: 40px;
+    }
+
+    @include mobile {
+      background: var(--color-accent-blue);
+    }
+  }
+
+  &__description {
+    max-width: 620px;
+    margin: 24px auto 0;
+  }
+}
+
+.field {
+  position: relative;
+  max-width: 480px;
+  margin: 64px auto 0;
+  z-index: 1;
+
+  @include mobile {
+    margin-top: 30px;
+  }
+
+  &__input {
+    color: var(--color-black);
+    border-radius: 24px;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 200px;
+    height: 80px;
+
+    @include mobile {
+      padding-right: 30px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #999;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    max-width: 160px;
+    width: 100%;
+    justify-content: center;
+
+    @include mobile {
+      position: static;
+      margin-top: 10px;
+    }
+  }
+}

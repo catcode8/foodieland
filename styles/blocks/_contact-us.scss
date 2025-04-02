@@ -20,8 +20,8 @@
     border-radius: 60px;
     overflow: hidden;
     background: 
-      url("/image/contact-us/1.png") 0% 100% / 376px no-repeat,
-      url("/image/contact-us/2.png") 100% 100% / 350px no-repeat,
+      url("./image/contact-us/1.png") 0% 100% / 376px no-repeat,
+      url("./image/contact-us/2.png") 100% 100% / 350px no-repeat,
       var(--color-accent-blue);
 
     @include tablet {

@@ -696,7 +696,7 @@ main.content {
   left: -50px;
   width: 150px;
   height: 150px;
-  background: url("/image/hero-handpicked.svg") center/contain no-repeat;
+  background: url("./image/hero-handpicked.svg") center/contain no-repeat;
 }
 
 .categories {
@@ -959,7 +959,7 @@ main.content {
   content: "";
   width: 110%;
   height: 110%;
-  background: url("/icons/recipe-card/star.svg") center/contain no-repeat;
+  background: url("./icons/recipe-card/star.svg") center/contain no-repeat;
   top: -5%;
   left: -5%;
   z-index: -1;
@@ -1260,7 +1260,7 @@ main.content {
   text-align: center;
   border-radius: 60px;
   overflow: hidden;
-  background: url("/image/contact-us/1.png") 0% 100%/376px no-repeat, url("/image/contact-us/2.png") 100% 100%/350px no-repeat, var(--color-accent-blue);
+  background: url("./image/contact-us/1.png") 0% 100%/376px no-repeat, url("./image/contact-us/2.png") 100% 100%/350px no-repeat, var(--color-accent-blue);
 }
 @media (max-width: 1023px) {
   .contact-us__container {
@@ -1735,7 +1735,7 @@ main.content {
   border-radius: 50%;
   border: 2px solid #dbe2e5;
   align-self: center;
-  background: var(--color-white) url("/icons/check.svg") center no-repeat;
+  background: var(--color-white) url("./icons/check.svg") center no-repeat;
   transition: 200ms ease-in-out;
   transition-property: background-color, border-color;
 }

@@ -94,7 +94,7 @@
       border-radius: 50%;
       border: 2px solid #dbe2e5;
       align-self: center;
-      background: var(--color-white) url("/icons/check.svg") center no-repeat;
+      background: var(--color-white) url("./icons/check.svg") center no-repeat;
       transition: 200ms ease-in-out;
       transition-property: background-color, border-color;
     }
